@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name 6502)(type Legacy)(uri /home/kevin/Development/my_projects/CAD/tpc65816/chip/65xx.lib)(options "")(descr ""))
+  (lib (name 6502e)(type Legacy)(uri /home/kevin/Development/my_projects/CAD/tpc65816/chip/um61256a.lib)(options "")(descr ""))
+  (lib (name 74f521)(type Legacy)(uri ${KIPRJMOD}/74f521.lib)(options "")(descr ""))
+  (lib (name tpc65816-rescue)(type Legacy)(uri ${KIPRJMOD}/tpc65816-rescue.lib)(options "")(descr ""))
+)
