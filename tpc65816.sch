@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title ""
-Date ""
-Rev ""
+Title "TPC65816 - HalfBurntToast"
+Date "2020-11-19"
+Rev "0.3"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "PRELIMINARY"
+Comment2 "NOT VERIFIED TO WORK"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -1752,10 +1752,24 @@ Wire Wire Line
 	1700 1200 1950 1200
 Wire Wire Line
 	1950 1200 1950 1450
-Wire Bus Line
-	3750 4350 3750 4800
+Entry Wire Line
+	3750 4550 3850 4650
+Entry Wire Line
+	3750 4650 3850 4750
+Text GLabel 4100 4650 2    50   Input ~ 0
+A14
+Wire Wire Line
+	3850 4650 4100 4650
+Text Label 3900 4650 0    50   ~ 0
+A14
+Text GLabel 4100 4750 2    50   Input ~ 0
+A15
+Wire Wire Line
+	4100 4750 3850 4750
 Wire Bus Line
 	10950 5150 10950 5450
+Wire Bus Line
+	3750 4350 3750 4800
 Wire Bus Line
 	4150 5550 4150 6250
 Wire Bus Line
@@ -1778,4 +1792,8 @@ Wire Bus Line
 	7200 3750 7200 5150
 Wire Bus Line
 	5000 2350 5000 4150
+Text Label 3900 4750 0    50   ~ 0
+A15
+Text Notes 7650 2500 0    354  ~ 71
+PRELIMINARY
 $EndSCHEMATC
