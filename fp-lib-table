@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name slide_switch)(type KiCad)(uri ${KIPRJMOD}/slide_switch.pretty)(options "")(descr ""))
+)

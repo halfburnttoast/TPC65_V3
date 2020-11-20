@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
+Title "TPC65816 - HalfBurntToast"
 Date ""
-Rev ""
+Rev "0.3"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "PRELIMINARY"
+Comment2 "NOT VERIFIED TO WORK"
 Comment3 ""
 Comment4 ""
 $EndDescr

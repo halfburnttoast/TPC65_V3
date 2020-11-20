@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title ""
-Date ""
-Rev ""
+Title "TPC65816 - HalfBurntToast"
+Date "2020-11-19"
+Rev "0.3"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "PRELIMINARY"
+Comment2 "NOT VERIFIED TO WORK"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -124,23 +124,23 @@ Connection ~ 2500 1000
 $Comp
 L Connector:Barrel_Jack J1
 U 1 1 5FB9B723
-P 1400 1100
-F 0 "J1" H 1457 1425 50  0000 C CNN
-F 1 "Barrel_Jack" H 1457 1334 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1450 1060 50  0001 C CNN
-F 3 "~" H 1450 1060 50  0001 C CNN
-	1    1400 1100
+P 900 1200
+F 0 "J1" H 957 1525 50  0000 C CNN
+F 1 "Barrel_Jack" H 957 1434 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 950 1160 50  0001 C CNN
+F 3 "~" H 950 1160 50  0001 C CNN
+	1    900  1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5FB9CE9A
-P 1950 1450
-F 0 "#PWR03" H 1950 1200 50  0001 C CNN
-F 1 "GND" H 1955 1277 50  0000 C CNN
-F 2 "" H 1950 1450 50  0001 C CNN
-F 3 "" H 1950 1450 50  0001 C CNN
-	1    1950 1450
+P 1450 1550
+F 0 "#PWR03" H 1450 1300 50  0001 C CNN
+F 1 "GND" H 1455 1377 50  0000 C CNN
+F 2 "" H 1450 1550 50  0001 C CNN
+F 3 "" H 1450 1550 50  0001 C CNN
+	1    1450 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1690,41 +1690,19 @@ NoConn ~ 1950 2950
 NoConn ~ 1950 2550
 NoConn ~ 3250 2650
 NoConn ~ 3250 2750
-Text GLabel 1700 2300 2    50   Input ~ 0
-~IRQ
-$Comp
-L Device:R R7
-U 1 1 6014D281
-P 1600 2100
-F 0 "R7" H 1670 2146 50  0000 L CNN
-F 1 "3.3k" H 1670 2055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1530 2100 50  0001 C CNN
-F 3 "~" H 1600 2100 50  0001 C CNN
-	1    1600 2100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0103
 U 1 1 6014D7EE
-P 1600 1900
-F 0 "#PWR0103" H 1600 1750 50  0001 C CNN
-F 1 "+5V" V 1615 2028 50  0000 L CNN
-F 2 "" H 1600 1900 50  0001 C CNN
-F 3 "" H 1600 1900 50  0001 C CNN
-	1    1600 1900
+P 1600 2150
+F 0 "#PWR0103" H 1600 2000 50  0001 C CNN
+F 1 "+5V" V 1615 2278 50  0000 L CNN
+F 2 "" H 1600 2150 50  0001 C CNN
+F 3 "" H 1600 2150 50  0001 C CNN
+	1    1600 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 1900 1600 1950
-Wire Wire Line
-	1600 2250 1600 2300
-Wire Wire Line
-	1700 2300 1600 2300
-Wire Wire Line
 	1950 2850 1600 2850
-Wire Wire Line
-	1600 2850 1600 2300
-Connection ~ 1600 2300
 $Comp
 L power:+5V #PWR0104
 U 1 1 601A1403
@@ -1747,11 +1725,9 @@ NoConn ~ 9500 4650
 Text GLabel 3450 3150 2    50   Output ~ 0
 RW_RAW
 Wire Wire Line
-	1700 1000 2000 1000
+	1200 1300 1450 1300
 Wire Wire Line
-	1700 1200 1950 1200
-Wire Wire Line
-	1950 1200 1950 1450
+	1450 1300 1450 1550
 Entry Wire Line
 	3750 4550 3850 4650
 Entry Wire Line
@@ -1766,6 +1742,92 @@ Text GLabel 4100 4750 2    50   Input ~ 0
 A15
 Wire Wire Line
 	4100 4750 3850 4750
+Text Label 3900 4750 0    50   ~ 0
+A15
+Text Notes 7650 2500 0    354  ~ 71
+PRELIMINARY
+$Comp
+L Connector:TestPoint_Alt TP1
+U 1 1 5FCEFE00
+P 6600 1450
+F 0 "TP1" V 6700 1500 50  0000 L CNN
+F 1 "MCLK" V 6600 1650 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6800 1450 50  0001 C CNN
+F 3 "~" H 6800 1450 50  0001 C CNN
+	1    6600 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP2
+U 1 1 5FD03B0E
+P 6600 1650
+F 0 "TP2" V 6700 1700 50  0000 L CNN
+F 1 "RW_RAW" V 6600 1850 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6800 1650 50  0001 C CNN
+F 3 "~" H 6800 1650 50  0001 C CNN
+	1    6600 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP3
+U 1 1 5FDA9750
+P 6600 1850
+F 0 "TP3" V 6700 1900 50  0000 L CNN
+F 1 "RW_PH2" V 6600 2050 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6800 1850 50  0001 C CNN
+F 3 "~" H 6800 1850 50  0001 C CNN
+	1    6600 1850
+	0    1    1    0   
+$EndComp
+Text GLabel 6550 1450 0    50   Input ~ 0
+PH2
+Wire Wire Line
+	6550 1450 6600 1450
+Text GLabel 6550 1650 0    50   Input ~ 0
+RW_RAW
+Text GLabel 6550 1850 0    50   Input ~ 0
+RW_PH2
+Wire Wire Line
+	6550 1650 6600 1650
+Wire Wire Line
+	6550 1850 6600 1850
+Connection ~ 1600 2550
+Wire Wire Line
+	1700 2550 1600 2550
+Wire Wire Line
+	1600 2500 1600 2550
+Wire Wire Line
+	1600 2150 1600 2200
+$Comp
+L Device:R R7
+U 1 1 6014D281
+P 1600 2350
+F 0 "R7" H 1670 2396 50  0000 L CNN
+F 1 "3.3k" H 1670 2305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1530 2350 50  0001 C CNN
+F 3 "~" H 1600 2350 50  0001 C CNN
+	1    1600 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 2550 2    50   Input ~ 0
+~IRQ
+Wire Wire Line
+	1600 2850 1600 2550
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 5FEC970D
+P 1450 1100
+F 0 "SW2" H 1450 1385 50  0000 C CNN
+F 1 "SW_SPDT" H 1450 1294 50  0000 C CNN
+F 2 "slide_switch:spdt_slide_switch" H 1450 1100 50  0001 C CNN
+F 3 "~" H 1450 1100 50  0001 C CNN
+	1    1450 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1000 2000 1000
+Wire Wire Line
+	1200 1100 1250 1100
 Wire Bus Line
 	10950 5150 10950 5450
 Wire Bus Line
@@ -1792,6 +1854,4 @@ Wire Bus Line
 	7200 3750 7200 5150
 Wire Bus Line
 	5000 2350 5000 4150
-Text Label 3900 4750 0    50   ~ 0
-A15
 $EndSCHEMATC
