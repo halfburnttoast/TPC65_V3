@@ -1716,7 +1716,6 @@ F 3 "" H 1900 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1900 2750 1950 2750
-NoConn ~ 1950 2650
 Text GLabel 3350 2550 2    50   Input ~ 0
 ~RESET
 Wire Wire Line
@@ -1828,6 +1827,8 @@ Wire Wire Line
 	1650 1000 2000 1000
 Wire Wire Line
 	1200 1100 1250 1100
+Wire Wire Line
+	1950 2650 1950 2750
 Wire Bus Line
 	10950 5150 10950 5450
 Wire Bus Line
@@ -1854,4 +1855,5 @@ Wire Bus Line
 	7200 3750 7200 5150
 Wire Bus Line
 	5000 2350 5000 4150
+Connection ~ 1950 2750
 $EndSCHEMATC
