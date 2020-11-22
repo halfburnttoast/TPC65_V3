@@ -1743,8 +1743,6 @@ Wire Wire Line
 	4100 4750 3850 4750
 Text Label 3900 4750 0    50   ~ 0
 A15
-Text Notes 7650 2500 0    354  ~ 71
-PRELIMINARY
 $Comp
 L Connector:TestPoint_Alt TP1
 U 1 1 5FCEFE00
@@ -1829,6 +1827,7 @@ Wire Wire Line
 	1200 1100 1250 1100
 Wire Wire Line
 	1950 2650 1950 2750
+Connection ~ 1950 2750
 Wire Bus Line
 	10950 5150 10950 5450
 Wire Bus Line
@@ -1855,5 +1854,4 @@ Wire Bus Line
 	7200 3750 7200 5150
 Wire Bus Line
 	5000 2350 5000 4150
-Connection ~ 1950 2750
 $EndSCHEMATC
