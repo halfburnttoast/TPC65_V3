@@ -1,0 +1,5 @@
+Wrong footprint for barrel jack
+Wrong footprint for voltage reg
+Move switch away from cap
+Flip bus tranciever A and B
+Make PLCC symbol + check footprint for 65C22
