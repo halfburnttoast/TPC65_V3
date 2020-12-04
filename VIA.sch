@@ -234,8 +234,6 @@ Wire Wire Line
 	4350 5300 4150 5300
 Wire Wire Line
 	4350 5400 4150 5400
-Wire Wire Line
-	8550 3350 8550 3250
 Entry Wire Line
 	8800 4050 8700 4150
 Entry Wire Line
@@ -284,20 +282,6 @@ Wire Wire Line
 	8550 4750 8750 4750
 Wire Wire Line
 	8550 4650 8750 4650
-$Comp
-L power:GND #PWR?
-U 1 1 5FE11CE7
-P 8550 3250
-AR Path="/5FE11CE7" Ref="#PWR?"  Part="1" 
-AR Path="/5FD33D0C/5FE11CE7" Ref="#PWR?"  Part="1" 
-AR Path="/60C81ED7/5FE11CE7" Ref="#PWR049"  Part="1" 
-F 0 "#PWR049" H 8550 3000 50  0001 C CNN
-F 1 "GND" H 8555 3077 50  0000 C CNN
-F 2 "" H 8550 3250 50  0001 C CNN
-F 3 "" H 8550 3250 50  0001 C CNN
-	1    8550 3250
-	0    -1   1    0   
-$EndComp
 Text GLabel 7300 4050 0    50   Input ~ 0
 ~IOCE
 Text GLabel 6700 3750 0    50   Output ~ 0
